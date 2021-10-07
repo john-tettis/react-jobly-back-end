@@ -17,7 +17,7 @@ if (process.env.NODE_ENV === "production") {
     connectionString: getDatabaseUri()
   });
 }
-
+console.log(db)
 db.connect();
 
 module.exports = db;
